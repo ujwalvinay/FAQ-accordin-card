@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(225deg, #af67e9, #a667e9, #9c66e9, #9266e9, #8866e9, #7d66e8, #7265e8, #6565e7);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  width: 1440px;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+  gap: 2rem;
+  border-radius: 20px;
+  background-color: white;
+}
+.container .img-div {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.container .img-div img {
+  position: absolute;
+  width: 100%;
+}
+.container .img-div .mainImg {
+  left: -4.5rem;
+  top: 3rem;
+  width: 100%;
+  z-index: 2;
+}
+.container .img-div .bgImg {
+  width: 200%;
+  left: -32rem;
+  bottom: -7rem;
+}
+.container .text-div {
+  position: relative;
+  padding: 3rem 0;
+  padding-right: 4rem;
+}
+.container .text-div .boxImg {
+  position: absolute;
+  width: 45%;
+  top: 12rem;
+  left: -36rem;
+  z-index: 100;
+}
+.container .text-div .answer {
+  display: none;
+}
+.container .text-div .Questions {
+  margin-block: 2rem;
+}
+.container .text-div .Questions p {
+  padding-bottom: 8px;
+}
+.container .text-div .Questions p:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.container .text-div .Questions .qs-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.container .text-div .Questions .qs-div img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}/*# sourceMappingURL=style.css.map */
