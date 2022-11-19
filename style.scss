@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// variables
+
+$bodyBg :linear-gradient(225deg, #af67e9, #a667e9, #9c66e9, #9266e9, #8866e9, #7d66e8, #7265e8, #6565e7);
+$pHover : hsl(14, 88%, 65%);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: $bodyBg;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    width: 1440px;
+}
+
+.container
+{
+    width: 60%;
+    display: flex;
+    gap:2rem;
+    border-radius: 20px;
+    background-color: white;
+    .img-div
+    {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        img
+        {
+            position: absolute;
+            width: 100%;
+        }
+        
+        .mainImg
+        {
+            left: -4.5rem;
+            top: 3rem;
+            width: 100%;
+            z-index: 2;
+        }
+        .bgImg
+        {
+            width: 200%;
+            left: -32rem;
+            bottom: -7rem;
+        }
+    }
+    .text-div
+    {
+        position: relative;
+        .boxImg
+        {
+            position: absolute;
+            width: 45%;
+            top: 12rem;
+            left: -36rem;
+            z-index: 100;
+        }
+        padding:3rem 0;
+        padding-right: 4rem;
+        .answer
+        {
+            display: none;
+        }
+        .Questions
+        {
+            margin-block: 2rem;
+            p
+            {
+                padding-bottom: 8px;
+                &:hover
+                {
+                    color: $pHover;
+                }
+            }
+            .qs-div
+            {
+                img
+                {
+                    height: fit-content;
+                }
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                justify-content: space-between;
+            }
+        }
+    }
+}
