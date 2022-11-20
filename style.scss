@@ -9,6 +9,7 @@ $pHover : hsl(14, 88%, 65%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 body
 {
@@ -40,9 +41,9 @@ body
         
         .mainImg
         {
-            left: -4.5rem;
-            top: 3rem;
-            width: 100%;
+            left: -4rem;
+            top: 5rem;
+            width: 105%;
             z-index: 2;
         }
         .bgImg
@@ -55,12 +56,13 @@ body
     .text-div
     {
         position: relative;
+        width: 60%;
         .boxImg
         {
             position: absolute;
-            width: 45%;
+            width: 150px;
             top: 12rem;
-            left: -36rem;
+            left: -31rem;
             z-index: 100;
         }
         padding:3rem 0;
@@ -90,6 +92,76 @@ body
                 align-items: center;
                 gap: 2rem;
                 justify-content: space-between;
+            }
+            .answer
+            {
+                .answer-div
+                {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    img
+                    {
+                        height: fit-content;
+                        transform: rotate(180deg);
+                    }
+                }
+                p
+                {
+                    margin-block: 10px;
+                    &:hover
+                    {
+                       color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    body,html
+    {
+        
+        overflow-x: hidden;
+    }
+    body
+    {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .container
+    {
+        flex-direction: column;
+        width: 80%;
+        .img-div
+        {   
+            width: 100%;
+            overflow: visible;
+            .mainImg
+            {
+                left: 1rem;
+                top: -8rem;
+                width: 90%;
+                z-index: 2;
+            }
+            .bgImg
+            {
+                display: none;
+            }
+        }
+        .text-div
+        {
+            padding: 2rem;
+            
+            width: 100%;
+            margin: 3rem auto;
+            h1
+            {
+                text-align: center;
+                font-weight: 700;
             }
         }
     }
